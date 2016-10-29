@@ -1,0 +1,28 @@
+.icon {
+  width: 100px;
+  height: 100px;
+  float:center;
+  color: white;
+  padding: 25px;
+}
+
+.details {
+  font-size: 15px;
+  color: white;
+}
+
+body {
+  text-align: center;
+  background-image: url('./moon-horizon.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.info {
+    color: white;
+}
+.title {
+    color: white;
+    padding: 25px;
+}
