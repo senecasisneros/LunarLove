@@ -26,3 +26,8 @@ body {
     color: white;
     padding: 25px;
 }
+
+/*p:first-letter {
+    /*text-transform:capitalize;*/
+    text-transform: uppercase;
+}*/

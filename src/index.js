@@ -15,7 +15,7 @@ class App extends Component {
       moon: [],
       phase: [],
       place: [],
-      date: []
+      date: [],
   };
   this.zipcodeSearch('92532');
 
