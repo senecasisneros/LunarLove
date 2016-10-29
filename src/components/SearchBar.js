@@ -3,22 +3,30 @@ import React, { Component } from "react";
 class SearchBar extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      city: ''
+  };
+
   }
   render() {
     return (
       <div>
-        <input type="text"/>
-        <input type="date"/>
+        <input type="text"
+        value={this.state.city}
+        onChange={ event => this.onInputChange(event.target.value) } />
+        {/* <input type="date"/> */}
       </div>
     );
   }
 
-  onInputChange() {
-
+  onInputChange(city) {  //method. Callback to App
+    this.setState({ city });
+    this.props.onSearchTermChange(city);
   }
-  onInputChangeDate() {
-
-  }
+  // onInputChangeDate() {
+  //
+  // }
 }
 
 export default SearchBar;
