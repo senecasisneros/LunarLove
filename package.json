@@ -28,6 +28,7 @@
     "axios": "^0.15.2",
     "babel-preset-stage-1": "^6.1.18",
     "fs": "0.0.1-security",
+    "lodash": "^4.16.4",
     "moment": "^2.15.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",

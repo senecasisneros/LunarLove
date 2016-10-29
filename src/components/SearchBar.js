@@ -5,7 +5,7 @@ class SearchBar extends Component {
     super(props);
 
     this.state = {
-      city: ''
+      zipcode: ''
   };
 
   }
@@ -13,16 +13,16 @@ class SearchBar extends Component {
     return (
       <div>
         <input type="text"
-        value={this.state.city}
+        value={this.state.zipcode}
         onChange={ event => this.onInputChange(event.target.value) } />
         {/* <input type="date"/> */}
       </div>
     );
   }
 
-  onInputChange(city) {  //method. Callback to App
-    this.setState({ city });
-    this.props.onSearchTermChange(city);
+  onInputChange(zipcode) {  //method. Callback to App
+    this.setState({ zipcode });
+    this.props.onSearchTermChange(zipcode);
   }
   // onInputChangeDate() {
   //
