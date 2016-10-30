@@ -6,16 +6,16 @@ class SearchBar extends Component {
 
     this.state = {
       zipcode: ''
-  };
-
+    };
   }
   render() {
     return (
-      <div>
-        <input type="text"
-        value={this.state.zipcode}
-        onChange={ event => this.onInputChange(event.target.value) } />
-        {/* <input type="date"/> */}
+      <div className="search-bar">
+      <input type="number"
+      placeholder="Enter Zipcode"
+      value={this.state.zipcode}
+      onChange={ event => this.onInputChange(event.target.value) } />
+      {/* <input type="date"/> */}
       </div>
     );
   }
@@ -24,9 +24,6 @@ class SearchBar extends Component {
     this.setState({ zipcode });
     this.props.onSearchTermChange(zipcode);
   }
-  // onInputChangeDate() {
-  //
-  // }
 }
 
 export default SearchBar;

@@ -1,14 +1,7 @@
-.icon {
-  width: 100px;
-  height: 100px;
-  float:center;
-  color: white;
-  padding: 25px;
-}
-
 .details {
   font-size: 15px;
   color: white;
+  padding-top: 35px;
 }
 
 body {
@@ -21,12 +14,28 @@ body {
 
 .info {
     color: white;
+    padding-top: 130px;
+    padding-right: 100px;
+    font-size: 17px;
 }
+
 .title {
     color: white;
-    padding: 25px;
 }
 
 info {
   color: white;
+}
+
+img {
+  padding-bottom: 25px;
+}
+
+.search-bar {
+  margin: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 15%;
 }

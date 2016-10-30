@@ -17,17 +17,18 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
 
   return (
     <div>
-    <p></p>
-    <img width="150" height="150" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
-      <p className="details first-letter">{_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
-      <p className="details">{ dateTime }</p>
-      <p className="details">Phase: {_.startCase(_.camelCase(name))}</p>
-      <p className="details">Moon Age: {age} days</p>
-      <p className="details">Illumination: { illum }%</p>
-      <p className="details">Moon Angle: { angle }</p>
-      <p className="details">Moonrise: { rise }</p>
-      <p className="details">Moonset: { set }</p>
-      <p className="details">Moon Transit: { transit }</p>
+        <div className="details col-sm-6">
+        <img width="200" height="200" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
+        <p>{_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
+        <p>{ dateTime }</p>
+        <p>Phase: {_.startCase(_.camelCase(name))}</p>
+        <p>Moon Age: {age} days</p>
+        <p>Illumination: { illum }%</p>
+        <p>Moon Angle: { angle }</p>
+        <p>Moonrise: { rise }</p>
+        <p>Moonset: { set }</p>
+        <p>Moon Transit: { transit }</p>
+      </div>
     </div>
   );
 }

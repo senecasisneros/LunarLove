@@ -1,7 +1,7 @@
 {
-  "name": "lunerLove",
+  "name": "The Mysterious Moon",
   "version": "1.0.0",
-  "description": "Moon App",
+  "description": "App to search by zipcode and receive info in the current mood phase",
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
