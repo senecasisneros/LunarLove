@@ -21,7 +21,7 @@ class App extends Component {
 
 }
   zipcodeSearch(zipcode) {
-    axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}?&client_id=RJ483JTv5hKMuW09hMzYF&client_secret=3tyzbporWFb6kv20yUQ2Jq1jNJfLeIAOYE4ZdUqA`)
+    axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}`)
       .then(response => {
         console.log('response:', response);
             this.setState({
