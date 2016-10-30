@@ -21,7 +21,7 @@ class App extends Component {
 
 }
   zipcodeSearch(zipcode) {
-    axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}`)
+    axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}?&client_id=RJ483JTv5hKMuW09hMzYF&client_secret=3tyzbporWFb6kv20yUQ2Jq1jNJfLeIAOYE4ZdUqA`)
       .then(response => {
         console.log('response:', response);
             this.setState({
@@ -43,7 +43,7 @@ class App extends Component {
         <h1 className="title">Lunar Love</h1>
           <SearchBar onSearchTermChange={zipcodeSearch}/>
           <MoonDetails  moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
-          <MoonInfo />
+          <MoonInfo phase={this.state.phase}/>
       </div>
     );
   }
