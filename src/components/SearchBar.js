@@ -15,12 +15,11 @@ class SearchBar extends Component {
       placeholder="Enter Zipcode"
       value={this.state.zipcode}
       onChange={ event => this.onInputChange(event.target.value) } />
-      {/* <input type="date"/> */}
       </div>
     );
   }
 
-  onInputChange(zipcode) {  //method. Callback to App
+  onInputChange(zipcode) {
     this.setState({ zipcode });
     this.props.onSearchTermChange(zipcode);
   }

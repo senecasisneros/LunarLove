@@ -1,5 +1,5 @@
 {
-  "name": "The Mysterious Moon",
+  "name": "theMysteriousMoon",
   "version": "1.0.0",
   "description": "App to search by zipcode and receive info in the current mood phase",
   "main": "index.js",
