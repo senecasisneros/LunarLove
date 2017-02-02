@@ -2,6 +2,7 @@ import React from "react";
 import moment from "moment";
 import lodash from "lodash"
 
+
 const MoonDetails = ( {moon, phase, place, date} ) => {
   const { transitISO, riseISO, setISO} = moon;
   const { name, angle, illum, age } = phase;
@@ -17,8 +18,7 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
 
   return (
     <div>
-        <div className="details col-sm-6">
-        <img width="200" height="200" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
+      <div className="details col-sm-6">
         <p>{_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
         <p>{ dateTime }</p>
         <p>Phase: {_.startCase(_.camelCase(name))}</p>
@@ -34,3 +34,4 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
 }
 
 export default MoonDetails;
+// <img width="220" height="220" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
