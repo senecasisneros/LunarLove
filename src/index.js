@@ -18,7 +18,10 @@ class App extends Component {
       phase: [],
       place: [],
       date: [],
-      moonPhaseOne: []
+      PhaseOne: [],
+      PhaseTwo: [],
+      PhaseThree: [],
+      PhaseFour: []
     };
     this.zipcodeSearch('92532');
     this.moonPhaseSearch('92532');
@@ -43,10 +46,11 @@ class App extends Component {
   moonPhaseSearch(zipcode) {
     axios.get(`https://api.aerisapi.com/sunmoon/moonphases?&limit=4/90001?&client_id=RJ483JTv5hKMuW09hMzYF&client_secret=3tyzbporWFb6kv20yUQ2Jq1jNJfLeIAOYE4ZdUqA`)
     .then(response => {
-      // console.log('response:', response);
-      // let moonPhaseOne = response.data.response[0].timestamp;
       this.setState({
-        moonPhaseOne: response.data.response[0]
+        PhaseOne: response.data.response[0],
+        PhaseTwo: response.data.response[1],
+        PhaseThree: response.data.response[2],
+        PhaseFour: response.data.response[3]
       })
     })
     .catch(function (error) {
@@ -63,7 +67,7 @@ class App extends Component {
       <SearchBar onSearchTermChange={zipcodeSearch}/>
       <MoonDetails  moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
       <MoonInfo phase={this.state.phase}/>
-      <MoonPhases moonPhaseOne={this.state.moonPhaseOne} />
+      <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/>
       </div>
     );
   }
