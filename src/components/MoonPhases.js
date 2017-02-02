@@ -11,7 +11,7 @@ const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
   let fourName = PhaseFour.name;
   let fourTime = moment.unix(PhaseFour.timestamp).add('hours').format('LLL');
   return (
-    <div>
+    <div className="phases">
       <p>{oneName} {oneTime}</p>
       <p>{twoName} {twoTime}</p>
       <p>{threeName} {threeTime}</p>

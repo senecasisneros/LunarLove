@@ -63,11 +63,11 @@ class App extends Component {
 
     return (
       <div>
-      <h1 className="title">The Mysterious Moon</h1>
-      <SearchBar onSearchTermChange={zipcodeSearch}/>
-      <MoonDetails  moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
-      <MoonInfo phase={this.state.phase}/>
-      <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/>
+        <h1 className="title">The Mysterious Moon</h1>
+        <SearchBar onSearchTermChange={zipcodeSearch}/>
+        <MoonDetails  moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
+        <MoonInfo phase={this.state.phase}/>
+        <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/>
       </div>
     );
   }
