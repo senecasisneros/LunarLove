@@ -1,6 +1,6 @@
 import React from "react";
 import moment from "moment";
-import lodash from "lodash"
+import lodash from "lodash";
 
 const MoonDetails = ( {moon, phase, place, date} ) => {
   const { transitISO, riseISO, setISO} = moon;
@@ -16,10 +16,12 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
   let dateTime = moment(dateTimeISO).format('lll');
 
   return (
-    <div>
-      <div className="details col-sm-6">
-        <img width="375" height="375" src={`https://s3.amazonaws.com/lunarlove/waxing crescent.jpg`}/>
-        <div className="currentDetails">
+    <div className="container">
+      <div className="row">
+        <div className="details col-md-4">
+          <img width="375" height="375" src={`https://s3.amazonaws.com/lunarlove/waxing crescent.jpg`}/>
+        </div>
+        <div className="currentDetails col-md-4">
           <p>{_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
           <p>{ dateTime }</p>
           <p>Phase: {_.startCase(_.camelCase(name))}</p>

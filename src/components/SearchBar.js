@@ -11,10 +11,10 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar">
-      <input type="number"
-      placeholder="Enter Zipcode"
-      value={this.state.zipcode}
-      onChange={ event => this.onInputChange(event.target.value) } />
+        <input type="number"
+          placeholder="Enter Zipcode"
+          value={this.state.zipcode}
+          onChange={ event => this.onInputChange(event.target.value) } />
       </div>
     );
   }
