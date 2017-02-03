@@ -14,7 +14,7 @@ const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
   return (
     <div className="container phases">
       <div className="row">
-        <h4>Next moon phases:</h4>
+        <h4 className="titleMoonPhases">Next moon phases:</h4>
         <div className="col-md-3 fourPhases">
           <div>
             {_.startCase(_.camelCase(oneName))} {oneTime}

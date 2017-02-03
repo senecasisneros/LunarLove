@@ -47,6 +47,7 @@ class MoonInfo extends Component {
     }
     return (
       <div>
+        <h4 className="titleSpritual">Spritual Symbology:</h4>
         <p className='info'>{ name }</p>
       </div>
     );
