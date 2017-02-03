@@ -9,7 +9,7 @@ class MoonInfo extends Component {
     };
   }
   render(){
-    let name = this.props.phase.name
+    let name = this.props.phase.name;
 
     let firstQuarter = "The moon is one-half and increasing in illumination. The seed is now presenting a root and plant structure on its way to growing and moving forward. This symbolizes a period of strength, determination, concentration, decision-making or re-evaluation, and commitment to action. During this time, remember to keep soldiering forward, despite any fears, emotions or doubts that might get in your way. Turn around any emotional energy into creative passion so that you can get things done and finish goals.";
     let waxingGibbous = "The moon is one-half but not fully illuminated, although increasing in illumination, therefore it represents gaining and attaining. So this can be applied to what you wish to gain and develop, such as friends, wealth, skills etc. Now the buds are preparing to bloom. This is the developmental stage where ideas and plans can be cultivated and fine-tuned before the next stage of manifestation.";

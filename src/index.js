@@ -53,20 +53,24 @@ class App extends Component {
       <div>
         <h1 className="title">The Mysterious Moon</h1>
         <SearchBar onSearchTermChange={zipcodeSearch}/>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <MoonDetails moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
-            </div>
-            <div className="col-md-6">
-              <MoonInfo phase={this.state.phase}/>
-            </div>
-          </div>
-        </div>
-        <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/>
+        <MoonDetails moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
       </div>
     );
   }
 }
 
 ReactDOM.render(<App />, document.querySelector('.container'))
+
+
+{/* <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/> */}
+{/* <div className="col-md-6">
+  <MoonInfo phase={this.state.phase}/>
+  </div> */}
+
+
+  // <div className="container">
+  //   <div className="row">
+  //     <div className="col-md-6">
+  //     </div>
+  //   </div>
+  // </div>

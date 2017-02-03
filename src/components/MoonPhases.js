@@ -15,25 +15,25 @@ const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
     <div className="container phases">
       <div className="row">
         <h4>Next moon phases:</h4>
-        <div className="col-md-3">
+        <div className="col-md-3 fourPhases">
           <div>
             {_.startCase(_.camelCase(oneName))} {oneTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${oneName}.jpg`}/>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 fourPhases">
           <div>
             {_.startCase(_.camelCase(twoName))} {twoTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${twoName}.jpg`}/>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 fourPhases">
           <div>
             {_.startCase(_.camelCase(threeName))} {threeTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${threeName}.jpg`}/>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 fourPhases">
           <div>
             {_.startCase(_.camelCase(fourName))} {fourTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${fourName}.jpg`}/>

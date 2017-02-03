@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: 'Bahiana', cursive;
 }
 
 @media (min-width: 1200px) {
@@ -8,10 +9,6 @@ body {
   }
 }
 
-
-
-
-
 @media (min-width: 992px) {
   .col-md-4 {
     width: 27%;
@@ -19,31 +16,36 @@ body {
 }
 /*/////MoonDetails Components//////////*/
 .details {
-  font-size: 17px;
+  font-size: 20x;
   color: white;
 }
 
 .currentDetails {
   color: white;
-  margin-top: 10px;
+  margin-top: -320px;
+  font-size: 20px;
 
 }
 
 .mainImg {
-  padding-bottom: 45px;
-  margin-left: -66px;
+  margin-top: -100px;
+  margin-left: 270px;
+  /*border: 1px solid yellow;*/
 }
-
 #moonName {
-  margin-left: 13px;
-
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+  /*margin-left: 70px;*/
+  font-size: 40px;
 }
+
 
 
 /*/////MoonInfo Components//////////*/
 .info {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   margin: 10px 0px;
 }
 
@@ -53,20 +55,40 @@ body {
   margin-top: -10px;
 }
 
+.fourPhases {
+  border: 1px solid white;
+  margin-top: 7px;
+}
+
 /*/////SearchBar Components//////////*/
 .search-bar {
-  margin: 20px;
   text-align: center;
-  padding-top: 20px;
+  padding-left: 650px;
+  /*float: right;*/
+  /*width: 10px;*/
 }
 
 .search-bar input {
-  width: 15%;
+  width: 55%;
   text-align: center;
+  float: right;
 }
+
+#zipcode {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
 
 /*/////index//////////*/
 .title {
+  font-size: 20px;
   color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
   text-align: center;
+  vertical-align: middle;
+  display: table-cell;
 }
