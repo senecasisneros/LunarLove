@@ -45,7 +45,11 @@ class MoonInfo extends Component {
       default:
       name = defaultMoon
     }
-    return <p className='info'>{ name }</p>
+    return (
+      <div>
+        <p className='info'>{ name }</p>
+      </div>
+    );
   }
 }
 
