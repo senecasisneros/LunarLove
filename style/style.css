@@ -2,6 +2,21 @@ body {
   background-color: black;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1250px !important;
+  }
+}
+
+
+
+
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 27%;
+  }
+}
 /*/////MoonDetails Components//////////*/
 .details {
   font-size: 17px;
@@ -10,10 +25,17 @@ body {
 
 .currentDetails {
   color: white;
+  margin-top: 10px;
+
 }
 
 img {
   padding-bottom: 45px;
+  margin-left: -66px;
+}
+
+#moonName {
+  text-align: center;
 }
 
 
@@ -21,11 +43,13 @@ img {
 .info {
   color: white;
   font-size: 15px;
+  margin: 10px 0px;
 }
 
 /*/////MoonPhases Components//////////*/
 .phases {
   color: white;
+  margin-top: -10px;
 }
 
 /*/////SearchBar Components//////////*/

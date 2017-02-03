@@ -29,7 +29,7 @@ class App extends Component {
 
   zipcodeSearch(zipcode) {
     axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}?&client_id=RJ483JTv5hKMuW09hMzYF&client_secret=3tyzbporWFb6kv20yUQ2Jq1jNJfLeIAOYE4ZdUqA`).then(response => {
-      // console.log('response:', response);
+      console.log('response:', response);
       this.setState({moon: response.data.response[0].moon, phase: response.data.response[0].moon.phase, place: response.data.response[0].place, date: response.data.response[0]})
     }).catch(function(error) {
       console.log(error);
@@ -63,11 +63,10 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/>
       </div>
     );
   }
 }
 
 ReactDOM.render(<App />, document.querySelector('.container'))
-
-{/* <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/>  */}
