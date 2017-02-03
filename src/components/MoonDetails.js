@@ -19,8 +19,8 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
     <div className="container">
       <div className="row">
         <div className="details col-md-4">
-          <p id="moonName">{_.startCase(_.camelCase(name))}</p>
-          <img width="300" height="300" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
+          <h3 id="moonName">{_.startCase(_.camelCase(name))}</h3>
+          <img className="mainImg" width="300" height="300" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
         </div>
         <div className="currentDetails col-md-4">
           <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>

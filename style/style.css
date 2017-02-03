@@ -29,13 +29,14 @@ body {
 
 }
 
-img {
+.mainImg {
   padding-bottom: 45px;
   margin-left: -66px;
 }
 
 #moonName {
-  text-align: center;
+  margin-left: 13px;
+
 }
 
 

@@ -18,25 +18,25 @@ const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
         <div className="col-md-3">
           <div>
             {_.startCase(_.camelCase(oneName))} {oneTime}
-            <img width="200" height="200" src={`https://s3.amazonaws.com/lunarlove/${oneName}.jpg`}/>
+            <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${oneName}.jpg`}/>
           </div>
         </div>
         <div className="col-md-3">
           <div>
             {_.startCase(_.camelCase(twoName))} {twoTime}
-            <img width="200" height="200" src={`https://s3.amazonaws.com/lunarlove/${twoName}.jpg`}/>
+            <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${twoName}.jpg`}/>
           </div>
         </div>
         <div className="col-md-3">
           <div>
             {_.startCase(_.camelCase(threeName))} {threeTime}
-            <img width="200" height="200" src={`https://s3.amazonaws.com/lunarlove/${threeName}.jpg`}/>
+            <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${threeName}.jpg`}/>
           </div>
         </div>
         <div className="col-md-3">
           <div>
             {_.startCase(_.camelCase(fourName))} {fourTime}
-            <img width="200" height="200" src={`https://s3.amazonaws.com/lunarlove/${fourName}.jpg`}/>
+            <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${fourName}.jpg`}/>
           </div>
         </div>
       </div>
