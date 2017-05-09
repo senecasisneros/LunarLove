@@ -28,8 +28,8 @@ class App extends Component {
   }
 
   zipcodeSearch(zipcode) {
-    axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}?&client_id=RJ483JTv5hKMuW09hMzYF&client_secret=3tyzbporWFb6kv20yUQ2Jq1jNJfLeIAOYE4ZdUqA`).then(response => {
-      console.log('response:', response);
+    axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}?&client_id=34yyWmaididZo1zz7IOfl&client_secret=yLfxyDp6r6Y5Fn6u8XYjpcbyljVBBI0INHyTFykJ`).then(response => {
+      // console.log('response:', response);
       this.setState({moon: response.data.response[0].moon, phase: response.data.response[0].moon.phase, place: response.data.response[0].place, date: response.data.response[0]})
     }).catch(function(error) {
       console.log(error);
@@ -37,7 +37,7 @@ class App extends Component {
   }
 
   moonPhaseSearch(zipcode) {
-    axios.get(`https://api.aerisapi.com/sunmoon/moonphases?&limit=4/90001?&client_id=RJ483JTv5hKMuW09hMzYF&client_secret=3tyzbporWFb6kv20yUQ2Jq1jNJfLeIAOYE4ZdUqA`).then(response => {
+    axios.get(`https://api.aerisapi.com/sunmoon/moonphases?&limit=4/90001?&client_id=34yyWmaididZo1zz7IOfl&client_secret=yLfxyDp6r6Y5Fn6u8XYjpcbyljVBBI0INHyTFykJ`).then(response => {
       this.setState({PhaseOne: response.data.response[0], PhaseTwo: response.data.response[1], PhaseThree: response.data.response[2], PhaseFour: response.data.response[3]})
     }).catch(function(error) {
       console.log(error);
@@ -52,7 +52,7 @@ class App extends Component {
     return (
       <div>
         <h1 className="title">The Mysterious Moon</h1>
-        <SearchBar onSearchTermChange={zipcodeSearch}/>
+        <SearchBar onSearchTermChange={zipcodeSearch} place={this.state.place} date={this.state.date}/>
         <MoonDetails moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
         <div>
           <MoonInfo phase={this.state.phase}/>
