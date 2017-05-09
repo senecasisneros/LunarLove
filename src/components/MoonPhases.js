@@ -3,11 +3,9 @@ import moment from "moment";
 import lodash from "lodash";
 
 const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
-  console.log('PhaseTwo:', PhaseTwo);
   let oneName = PhaseOne.name;
   let oneTime = moment.unix(PhaseOne.timestamp).add('hours').format('LLL');
   let twoName = PhaseTwo.name;
-  console.log('twoName:', twoName);
   let twoTime = moment.unix(PhaseTwo.timestamp).add('hours').format('LLL');
   let threeName = PhaseThree.name;
   let threeTime = moment.unix(PhaseThree.timestamp).add('hours').format('LLL');

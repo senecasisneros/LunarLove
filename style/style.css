@@ -1,6 +1,7 @@
 body {
   background-color: black;
   font-family: 'Bahiana', cursive;
+  padding-top: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -29,17 +30,12 @@ body {
 
 .mainImg {
   margin-top: -175px;
-  /*margin-left: 270px;*/
   margin-left: 400px;
-  /*border: 1px solid yellow;*/
 }
 #moonName {
-  /*text-align: right;*/
   color: white;
   margin-bottom: 100px;
-  /*margin-left: 70px;*/
   font-size: 40px;
-  /*margin-left: 720px;*/
   padding-top: 50px;
 }
 
@@ -50,8 +46,6 @@ body {
   color: white;
   font-size: 30px;
   margin-top: 30px;
-  /*margin: 10px 0px;*/
-  /*border: solid 1px gray;*/
 }
 
 /*/////MoonPhases Components//////////*/
@@ -68,9 +62,6 @@ body {
 /*/////SearchBar Components//////////*/
 .search-bar {
   text-align: center;
-  /*padding-left: 650px;*/
-  /*float: right;*/
-  /*width: 10px;*/
 }
 
 .search-bar input {
@@ -83,6 +74,7 @@ body {
   margin-left: 10px;
   font-size: 25px;
   padding-top: 20px;
+  color: white;
 }
 
 

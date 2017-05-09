@@ -29,7 +29,6 @@ class App extends Component {
 
   zipcodeSearch(zipcode) {
     axios.get(`https://api.aerisapi.com/sunmoon/${zipcode}?&client_id=34yyWmaididZo1zz7IOfl&client_secret=yLfxyDp6r6Y5Fn6u8XYjpcbyljVBBI0INHyTFykJ`).then(response => {
-      // console.log('response:', response);
       this.setState({moon: response.data.response[0].moon, phase: response.data.response[0].moon.phase, place: response.data.response[0].place, date: response.data.response[0]})
     }).catch(function(error) {
       console.log(error);
@@ -66,17 +65,3 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.querySelector('.container'))
-
-
-{/* <MoonPhases PhaseOne={this.state.PhaseOne} PhaseTwo={this.state.PhaseTwo} PhaseThree={this.state.PhaseThree} PhaseFour={this.state.PhaseFour}/> */}
-//  <div className="col-md-6">
-// <MoonInfo phase={this.state.phase}/>
-// </div>
-
-
-// <div className="container">
-//   <div className="row">
-//     <div className="col-md-6">
-//     </div>
-//   </div>
-// </div>

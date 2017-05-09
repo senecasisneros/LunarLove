@@ -36,15 +36,3 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
 }
 
 export default MoonDetails;
-
-// <div className="container">
-//   <div className="row">
-//     <div className="details col-md-4">
-//     </div>
-//   </div>
-// </div>
-//
-// <div className="currentDetails col-md-4">
-// </div>
-
-{/* <img className="mainImg" width="350" height="350" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/> */}

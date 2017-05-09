@@ -12,7 +12,6 @@ class SearchBar extends Component {
       place: '',
       city: ''
     };
-    console.log('this.props:', this.props);
   }
 
   onInputChange(zipcode) {
@@ -40,5 +39,3 @@ class SearchBar extends Component {
 }
 
 export default SearchBar;
-{/* <p>Current Time: { dateTime }</p> */}
-{/* <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p> */}
