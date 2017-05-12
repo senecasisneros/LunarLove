@@ -17,19 +17,23 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
 
   return (
     <div>
-      <div>
-        <h3 id="moonName">{_.startCase(_.camelCase(name))}</h3>
-      <img className="mainImg" width="450" height="450" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`}/>
+      <h3 id="moonName">{_.startCase(_.camelCase(name))}</h3>
+      <div className="container">
+        <div className="row">
+          <div className="currentDetails col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
+            <p>Current Time: { dateTime }</p>
+            <p>Moon Age: { age } days</p>
+            <p>Illumination: { illum }%</p>
+            <p>Moon Angle: { angle }</p>
+            <p>Moonrise Today: { rise }</p>
+            <p>Moonset Today: { set }</p>
+            <p>Moon Transit: { transit }</p>
+          </div>
+          <div className='col-lg-10 col-md-10 col-sm-12 col-xs-12'>
+            <img className="mainImg" width= "450" height="450" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`} responsive/>
+          </div>
       </div>
-      <div className="currentDetails">
-        <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
-        <p>Current Time: { dateTime }</p>
-        <p>Moon Age: { age } days</p>
-        <p>Illumination: { illum }%</p>
-        <p>Moon Angle: { angle }</p>
-        <p>Moonrise Today: { rise }</p>
-        <p>Moonset Today: { set }</p>
-        <p>Moon Transit: { transit }</p>
       </div>
     </div>
   );
