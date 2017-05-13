@@ -13,31 +13,23 @@ const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
   let fourTime = moment.unix(PhaseFour.timestamp).add('hours').format('LLL');
   return (
     <div className="container phases">
+      <h4 className="titleMoonPhases">Next moon phases:</h4>
       <div className="row">
-        <h4 className="titleMoonPhases">Next moon phases:</h4>
-        <div className="col-md-3 fourPhases">
-          <div>
+        <div className="col-lg-3 fourPhases">
             {_.startCase(_.camelCase(oneName))} {oneTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${oneName}.jpg`}/>
-          </div>
         </div>
-        <div className="col-md-3 fourPhases">
-          <div>
+        <div className="col-lg-3 fourPhases">
             {_.startCase(_.camelCase(twoName))} {twoTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${twoName}.jpg`}/>
-          </div>
         </div>
-        <div className="col-md-3 fourPhases">
-          <div>
+        <div className="col-lg-3 fourPhases">
             {_.startCase(_.camelCase(threeName))} {threeTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${threeName}.jpg`}/>
-          </div>
         </div>
-        <div className="col-md-3 fourPhases">
-          <div>
+        <div className="col-lg-3 fourPhases">
             {_.startCase(_.camelCase(fourName))} {fourTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${fourName}.jpg`}/>
-          </div>
         </div>
       </div>
     </div>

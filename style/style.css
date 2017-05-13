@@ -1,7 +1,7 @@
 body {
   background-color: black;
   font-family: 'Bahiana', cursive;
-  padding-top: 30px;
+  max-width: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -15,6 +15,7 @@ body {
     width: 27%;
   }
 }
+
 /*/////MoonDetails Components//////////*/
 .details {
   font-size: 20x;
@@ -31,7 +32,7 @@ body {
 
 .mainImg {
   margin-top: -15px;
-  margin-left: 150px;
+  /*margin-left: 150px;*/
 }
 #moonName {
   color: white;
@@ -46,17 +47,16 @@ body {
 .info {
   color: white;
   font-size: 30px;
-  /*margin-top: 30px;*/
 }
 
 /*/////MoonPhases Components//////////*/
 .phases {
   color: white;
-  /*margin-top: -10px;*/
+  text-align: center;
 }
 
 .fourPhases {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   /*margin-top: 7px;*/
 }
 
@@ -72,34 +72,46 @@ body {
 }
 
 #zipcode {
-  /*margin-top: -400px;*/
-  /*margin-left: 10px;*/
+  margin-top: 80px;
   font-size: 25px;
-  /*padding-top: 20px;*/
   /*color: white;*/
 }
 
 
 /*/////index//////////*/
 .title {
-  font-size: 20px;
+  font-size: 22px;
   color: white;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: gray;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
 }
 
 .titleMoonPhases {
   text-align: center;
   /*margin-top: 70px;*/
   font-size: 25px;
-
-
 }
+
+#moonLogo {
+  width: 6%;
+  length: 6%;
+}
+
+.res {
+  height:60px;
+  border-bottom:1px solid white;
+  text-align:left;
+}
+
+.res img {
+  margin-top:8.5px;
+  margin-left:5px;
+  display:inline
+}
+
+.res span {
+  display:block;
+}
+
+
 
 .titleSpritual {
   text-align: center;

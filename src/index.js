@@ -50,7 +50,10 @@ class App extends Component {
 
     return (
       <div>
-        <h1 className="title">The Mysterious Moon</h1>
+        <div className="res">
+          <img id="moonLogo" src="./style/moonLogo.png" alt=""/>
+          <span className="title">The Mysterious Moon</span>
+        </div>
         <SearchBar onSearchTermChange={zipcodeSearch} place={this.state.place} date={this.state.date}/>
         <MoonDetails moon={this.state.moon} phase={this.state.phase} place={this.state.place} date={this.state.date}/>
         <div>
