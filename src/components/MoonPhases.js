@@ -16,19 +16,19 @@ const MoonPhases = ( {PhaseOne, PhaseTwo, PhaseThree, PhaseFour} ) => {
       <h4 className="titleMoonPhases">Next moon phases:</h4>
       <div className="row">
         <div className="col-lg-3 fourPhases">
-            {_.startCase(_.camelCase(oneName))} {oneTime}
+            {_.startCase(_.camelCase(oneName))}: {oneTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${oneName}.jpg`}/>
         </div>
         <div className="col-lg-3 fourPhases">
-            {_.startCase(_.camelCase(twoName))} {twoTime}
+            {_.startCase(_.camelCase(twoName))}: {twoTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${twoName}.jpg`}/>
         </div>
         <div className="col-lg-3 fourPhases">
-            {_.startCase(_.camelCase(threeName))} {threeTime}
+            {_.startCase(_.camelCase(threeName))}: {threeTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${threeName}.jpg`}/>
         </div>
         <div className="col-lg-3 fourPhases">
-            {_.startCase(_.camelCase(fourName))} {fourTime}
+            {_.startCase(_.camelCase(fourName))}: {fourTime}
             <img width="175" height="175" src={`https://s3.amazonaws.com/lunarlove/${fourName}.jpg`}/>
         </div>
       </div>

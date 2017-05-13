@@ -46,7 +46,7 @@ body {
 /*/////MoonInfo Components//////////*/
 .info {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 50px;
   margin-left: 50px;
 }
@@ -87,7 +87,8 @@ input {
 
 .titleMoonPhases {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 #moonLogo {
@@ -114,9 +115,13 @@ input {
 .titleSpritual {
   text-align: center;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .locTime {
   float: right;
+}
+
+.fourPhases {
+  font-size: 20px;
 }
