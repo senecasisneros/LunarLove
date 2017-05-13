@@ -23,7 +23,7 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
         <div className="row">
           <div className="currentDetails col-lg-2 col-md-2 col-sm-12 col-xs-12">
             <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
-            <p>Current Time: { dateTime }</p>
+            <p>Time: { dateTime }</p>
             <p>Moon Age: { age } days</p>
             <p>Illumination: { illum }%</p>
             <p>Moon Angle: { angle }</p>
