@@ -28,21 +28,18 @@ body {
 
 .currentDetails {
   color: white;
-  /*float: left;*/
   margin-top: 60px;
   font-size: 20px;
 }
 
 .mainImg {
   margin-top: -15px;
-  /*margin-left: 150px;*/
 }
 #moonName {
   color: white;
-  /*margin-bottom: -50px;*/
   font-size: 40px;
-  /*padding-top: 50px;*/
-  /*float: left;*/
+  margin-left: 20px;
+  text-align: left;
 }
 
 
@@ -51,18 +48,18 @@ body {
 .info {
   color: white;
   font-size: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 /*/////MoonPhases Components//////////*/
 .phases {
   color: white;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.fourPhases {
-  /*border: 1px solid white;*/
-  /*margin-top: 7px;*/
-}
 
 /*/////SearchBar Components//////////*/
 .search-bar {
@@ -90,7 +87,6 @@ body {
 
 .titleMoonPhases {
   text-align: center;
-  /*margin-top: 70px;*/
   font-size: 25px;
 }
 
@@ -121,7 +117,6 @@ body {
   text-align: center;
   color: white;
   font-size: 25px;
-  /*margin-top: 70px;*/
 }
 
 .locTime {

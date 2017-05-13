@@ -17,12 +17,12 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
   let dateTime = moment(dateTimeISO).format('lll');
 
   return (
-    <div className='moonDetails animated zoomIn'>
+    <div className='moonDetails'>
       <h3 id="moonName">{_.startCase(_.camelCase(name))}</h3>
       <div className="container">
         <div className="row">
           <div className="currentDetails col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <p className="animated zoomIn">Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
+            <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
             <p>Current Time: { dateTime }</p>
             <p>Moon Age: { age } days</p>
             <p>Illumination: { illum }%</p>
@@ -32,7 +32,7 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
             <p>Moon Transit: { transit }</p>
           </div>
           <div className='col-lg-10 col-md-10 col-sm-12 col-xs-12'>
-            <img className="mainImg" width= "450" height="450" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`} responsive/>
+            <img className="mainImg animated zoomIn" width= "450" height="450" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`} responsive/>
           </div>
       </div>
       </div>
