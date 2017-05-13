@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 import lodash from "lodash";
+import animated from 'animate.css';
 
 const MoonDetails = ( {moon, phase, place, date} ) => {
   const { transitISO, riseISO, setISO} = moon;
@@ -16,12 +17,12 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
   let dateTime = moment(dateTimeISO).format('lll');
 
   return (
-    <div>
+    <div className='moonDetails animated zoomIn'>
       <h3 id="moonName">{_.startCase(_.camelCase(name))}</h3>
       <div className="container">
         <div className="row">
           <div className="currentDetails col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <p>Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
+            <p className="animated zoomIn">Location: {_.startCase(_.camelCase(city))}, {_.capitalize(state)}</p>
             <p>Current Time: { dateTime }</p>
             <p>Moon Age: { age } days</p>
             <p>Illumination: { illum }%</p>

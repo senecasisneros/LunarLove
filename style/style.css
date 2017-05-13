@@ -17,6 +17,10 @@ body {
 }
 
 /*/////MoonDetails Components//////////*/
+.moonDetails {
+  text-align: center;
+}
+
 .details {
   font-size: 20x;
   color: white;
@@ -27,7 +31,6 @@ body {
   /*float: left;*/
   margin-top: 60px;
   font-size: 20px;
-
 }
 
 .mainImg {
@@ -36,9 +39,10 @@ body {
 }
 #moonName {
   color: white;
-  margin-bottom: -50px;
+  /*margin-bottom: -50px;*/
   font-size: 40px;
   /*padding-top: 50px;*/
+  /*float: left;*/
 }
 
 
