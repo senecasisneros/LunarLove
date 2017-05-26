@@ -8,10 +8,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
-      {
+    loaders: [{
+      test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
@@ -34,9 +34,9 @@ module.exports = {
 },
 resolve: {
   extensions: ['', '.js', '.jsx']
-},
-devServer: {
-  historyApiFallback: true,
-  contentBase: './'
 }
+// devServer: {
+//   historyApiFallback: true,
+//   contentBase: './'
+// }
 };
