@@ -32,7 +32,7 @@ const MoonDetails = ( {moon, phase, place, date} ) => {
             <p>Moon Transit: { transit }</p>
           </div>
           <div className='col-lg-10 col-md-10 col-sm-12 col-xs-12'>
-            <img className="mainImg animated zoomIn" width= "450" height="450" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`} responsive/>
+            <img className="mainImg animated zoomIn" width= "400" height="400" src={`https://s3.amazonaws.com/lunarlove/${name}.jpg`} responsive/>
           </div>
       </div>
       </div>
