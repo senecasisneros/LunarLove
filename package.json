@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "App to search by zipcode and receive info in the current mood phase",
   "main": "index.js",
+  "engines": {
+    "node": "v6.5.0"
+  },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prod": "NODE_ENV=production node server.js",
