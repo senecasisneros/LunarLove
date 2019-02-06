@@ -1,7 +1,7 @@
 body {
   /*background-image: url('/style/night-sky.jpg');*/
   background-color: black;
-  font-family: 'Bahiana', cursive;
+  font-family: "Bahiana", cursive;
   max-width: 100%;
   color: white;
 }
@@ -100,19 +100,19 @@ input {
 }
 
 .res {
-  height:60px;
-  border-bottom:1px solid white;
-  text-align:left;
+  height: 60px;
+  border-bottom: 1px solid white;
+  text-align: left;
 }
 
 .res img {
-  margin-top:8.5px;
-  margin-left:5px;
-  display:inline
+  margin-top: 8.5px;
+  margin-left: 5px;
+  display: inline;
 }
 
 .res span {
-  display:block;
+  display: block;
 }
 
 .titleSpritual {
